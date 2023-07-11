@@ -16,6 +16,10 @@
   justify-content: center;
 }
 
+.tópicos__lista2 {
+  display: none;
+}
+
 .tópicos__item {
   margin: 2em 0.5em;
 }
@@ -27,4 +31,29 @@
   text-decoration: none;
   font-size: 14px;
   font-weight: 700;
+}
+
+@media screen and (min-width: 1024px) {
+  .tópicos {
+    padding: 2em 8.5em;
+  }
+
+  .tópicos__titulo {
+    font-size: 24px;
+  }
+
+  .tópicos__lista {
+    display: none;
+  }
+
+  .tópicos__lista2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .tópicos__link {
+    font-size: 24px;
+    line-height: 1.5em;
+  }
 }
